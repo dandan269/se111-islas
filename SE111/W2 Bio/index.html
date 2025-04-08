@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dan" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in-document styling; loads in head so styles apply as content loads-->
+    <style>
+
+        /*in here we must write in CSS*/
+
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page
+                *by ELEMENT type        ex: body, div, p
+                *by ID attribute        ex: #wrapper, #nav, #footer, #title
+                *by CLASS attribute     ex: coming in week 3 :]
+
+        */
+
+        div { /*applies to ALL divs in the page*/
+
+            border:1px solid black;
+            padding:10px; /*adds 10px of space to all 4 sides inbetween content & border*/
+            margin:5px;/*adds 5px of space between elements (space added outside of border)*/
+
+        }
+
+        #wrapper {/*# specifies ID name, only applies to single element with that ID */
+            background-color:rgba(52, 142, 203, 0.786)
+
+        }
+
+        #nav, #footer {/*can provide list or collection of elements to select*/
+
+            background-color:rgb(105, 210,239);
+            
+
+        }
+
+        a {/*styles all a (link) tags in page*/
+
+            text-decoration: none; /*removes the underline*/
+            font-size:20px;
+            margin-right:25px; /*adds 25 px of space to the right OF EACH link*/
+
+        }
+
+        /*4 default states --> :link, :hover, :active, :visited*/ 
+        a:hover {
+            color:teal;
+        }
+
+        #footer {
+            font-size:10px;
+            text-align:center;
+        }
+
+    </style>
+
+</head>
+<body style="background-color:rgb(105, 210, 239);">
+    <div id="wrapper"><!--this div holds and "wraps around/together" all content on the page-->
+
+        <h1><center> Dan's About Me :0 </center></h1>
+      
+
+        <!--NAVIGATION----------------------------------->
+        <div id="nav">
+            <!--ID names can only be used 1x per page-->
+
+            <!--linking to OUTSIDE pages [not part of webiste] you need the FULL PATH-->
+            
+            <!--href holds the URL of webiste linking to-->
+            <!--target="_blank" opens link in a new tab in browser-->
+
+            <!--IN-PAGE links: linking to sections within the actual page itself (jumping to different sections)-->
+            <center>
+            <a href="#bio">HOME</a>
+            <a href="#school">SCHOOL</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+            <a href="https://www.neit.edu/">NEIT</a>
+            </center>
+        
+            
+        </div><!--/ #nav-->
+        <div><center><img src="images/yes.jpg" width="200"></center> </div>
+        
+
+        <!--BIO SECTION--------------------------------->
+        <div id="#bio"> 
+            
+
+            <h2>BIO</h2> 
+            <img src="images/sleeping.webp" width="120">
+            <p>Hallo, I'm Dan :0 </p>
+               <p>My birthday is in October, I'm a Scropio </p>
+               <p>I have a few dogs, but I'd really love a cat :0</p> 
+               <p>Here's a picture of my precious when she had puppies :3 </p> <img src="images/pup.jpeg" alt="Puppies" width="280">
+
+            
+            <!--img tag inserts an image; can be relative files (found within project folder, just need relative address path) or remote files (found elsewhere online, needs full URL address path)-->
+
+            
+
+            <!--required attributes:
+                    *src  provides the path to the image file, either remote or relative
+                    *alt  provides alternative text for written page display if image link is broken OR for accessibility of screenreaders-->
+            
+            <!--RELATIVE img link example-->
+
+        </div><!--/ #bio-->
+
+        <!--SCHOOLING SECTION-------------------------->
+        <div id="school"> 
+            <h2>School</h2>
+            <img src="images/Cat-School.jpg" width="280">
+            <p>I attended a school called Blackstone Valley Prep (BVP) from 4th to 12th</p>
+            <p> Located in Cumberland RI</p>
+            <img src="images/school.jpeg" width="280">
+            <p>Now I'm at NEIT studing Cybersecuirty :3</p>
+            <img src="images/neit.jpeg" width="280">
+
+
+
+
+            
+
+
+        </div><!--/ #school-->
+
+        <!--HOBBIES SECTION---------------------------->
+        <div id="hobbies"> 
+
+            <h2>Hobbies</h2>
+            <img src="images/tea.jpg" width="180" length="180">
+            <p>I play a few games, but my current favs are:
+
+            </p>
+
+            <ul>
+                <li>Marvel Rivals</li>
+                <li>Wuthering Waves</li>
+                <li>Mobile Legends</li>
+            </ul>
+            <img src="images/silly.jpeg" width="180">
+            <p>I also really enjoy baking :3 Especially banna bread </p>
+            <img src="images/cat-prepares-dough-baking-600nw-572636545.webp" width="280">
+
+
+            
+
+        </div><!--/ #hobbies-->
+
+        <!--FOOTER SECTION----------------------------->
+        <div id="footer" >
+            
+
+            <a href="#wrapper">Back to Top of Page</a>
+            <p>&copy; 2025 | DAN | SE111 </p>
+
+           
+
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+</body>
+</html>
