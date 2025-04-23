@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Downton Abbey: A New Era - Intro Page">
+    <meta name="author" content="Dan">
+    <title>Downton Abbey: A New Era</title>
+    <style>
+        div { /*applies to ALL divs in the page*/
+
+      border:1px solid black;
+      padding:10px; /*adds 10px of space to all 4 sides inbetween content & border*/
+      margin:5px;/*adds 5px of space between elements (space added outside of border)*/
+        }
+      
+    body {
+        
+        text-align:center;
+       
+        font-size:19px;
+        font-family: 'Lora', serif;
+        background-image:url("images/country.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+
+            
+        }
+
+    #wrapper {
+    width: 900px;
+    padding: 25px;
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    background-image: url("images/money.jpg");
+    background-blend-mode: overlay; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff7b;
+    backdrop-filter: blur(2px);
+        
+    }
+
+    #header, #footer {
+
+        padding:15px;
+        margin:20px;
+        text-align:center;
+        background-color: transparent;
+        
+        
+    }
+
+    img {
+    width: 25%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #d4a76a;
+    object-fit: cover;
+    aspect-ratio: 2/3; /* Uniform portrait ratio */
+}
+
+
+    #header {
+
+        text-align:center;
+    }
+
+    #footer {
+        font-size:10px;
+        text-align:center;
+    }
+
+    a:hover {
+        background-color:rgba(255, 255, 255, 0);
+    }
+        
+
+        .link {
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #916a48;
+           
+            font-family: 'Lora', serif;
+            font-weight: bold;
+        }
+        .link:hover {
+    color: #916a48;
+    
+        }
+        #poster {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+    
+
+     #content {
+    
+    background-blend-mode: overlay; /* Blend the image with a light gradient */
+    background-blend-mode: overlay; /* Blend the image with the gradient */
+    background-blend-mode: overlay;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+h2 {
+    font-size: 2rem;
+    grid-column: 1 / -1; /* Span full width */
+    color: #916a48;
+    
+}
+h4 {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #916a48;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <div id="header" >
+            <h1>Welcome to Downton Abbey: A New Era</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div id="nav">
+            <a href="index.html" class="link">Home</a>
+            <a href="cast.html" class="link">Characters</a>
+            <a href="review.html" class="link">Review</a>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <h2>The Crawley family</h2>
+            <img src="images/Earlofgrantham.webp" >
+            <h4>Robert Crawley, Earl of Granthem</h4>
+            <h4>Hugh Bonneville</h4>
+            <br>
+ 
+            <img src="images/lady.jpeg">
+            <h4>Lady Cora Crawley, Countess of Grantham</h4>
+             <h4>Elizabeth McGovern</h4>
+             <br>
+ 
+             <img src="images/Mary100-0.webp">
+             <h4>Lady Mary Crawley</h4>
+             <h4>Michelle Dockery</h4>
+             <br>
+ 
+             <img src="images/granny.webp">
+              <h4>Lady Violet Crawley, Dowager Countess of Grantham</h4>
+              <h4>Dame Maggie Smith</h4>
+                 <br>
+             <img src="images/edith.webp">
+             <h4>Edith Violet Pelham, Marchioness of Hexham</h4>
+             <h4>Laura Carmichael</h4>
+             <br>
+             <img src="images/Marquessofhexham.webp">
+             <h4>Herbert Pelham, 7th Marquess of Hexham</h4>
+             <h4>Dominic West</h4>
+             <br>
+             <img src="images/Tombranson.webp">
+             <h4>Tom Branson</h4>
+             <h4>Allen Leech</h4>
+             <br>
+             <img src="images/Baronessmerton.webp">
+             <h4>Isobel Crawley</h4>
+             <h4>Penelope Wilton</h4>
+            
+
+        </div>
+        
+
+
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; </p>
+        </div>
+    </div>
+</body>
+</html>
