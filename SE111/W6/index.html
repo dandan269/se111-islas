@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dan">
+    <meta name="description" content="W6 Calculator">
+
+    <title>W6 | Javascript Calculator</title>
+</head>
+<body>
+
+   
+
+    <h1>W6 | Javascript Pay Calculator</h1>
+    
+    
+    <script>
+
+      
+        var name = prompt(`Hello! Welcome to the Pay Calculator! \nWhat's your name?`)
+
+        var hours = Number(prompt(`Please enter the number of hours you worked for a 2 week period: `))
+        var rate = Number(prompt(` Please enter your hourly rate: `))
+
+       
+        var gross = hours * rate 
+        var taxAmount = gross * 0.2
+        var net = gross - taxAmount
+
+       
+        console.log(`Gross Pay: $${gross.toFixed(2)}`)
+        console.log(`Tax Amount: $${taxAmount.toFixed(2)}`)
+        console.log(`Net Pay: $${net.toFixed(2)}`)
+
+        
+        alert(
+            `Thank you ${name}, your Pay Calculation report is available below: 
+            \nHOURS WORKED: ${hours}hrs   |    HOURLY RATE: $${rate.toFixed(2)}/hr
+            GROSS PAY: $${gross.toFixed(2)}
+            TAX AMOUNT: $${taxAmount.toFixed(2)}
+            NET PAY: $${net.toFixed(2)}
+
+            \nThank you for using the Pay Calculator, have a great day!`
+            
+        )
+    </script>
+    
+</body>
+</html>
