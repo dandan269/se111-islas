@@ -163,7 +163,11 @@
 
                 alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
             }
+            // extra credit
+            //I think the user bug is if the user enters a string instead of a number, the program will crash. So like d in the hours worked will crash the program and will display NaN.
+            // Also, the program will keep the calculations if the user enteres new number without refreshing the page.
             
+
         }
         
     </script>
