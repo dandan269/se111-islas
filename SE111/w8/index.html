@@ -62,6 +62,7 @@
 			LAST: Targaryen
 			_________________________
 		--------------------------------------------------------*/
+		
 
 		function calcAndDisplay(e)
 		{
@@ -77,25 +78,24 @@
 
 
 
-            }//end of person object
+            };
+			//end of person object
 
 
 
 
 			//Add the person object into the people array by using the .push() array method.
-			people.push(person);
+			 people.push(person);
 
 			//Bubble sort people on the last name
-			for(let i=0; i < people.length-1; i++)
-			{
-				for(let j=0; j < people.length-1; j++)
-				{
-					if(people[j].last > people[j+1].last)
-				{
-						let temp = people[j]
-						people[j] = people[j+1]
-						people[j+1] = temp
-				}
+			for(let i=0; i < people.length-1; i++) {
+				for(let j=0; j < people.length-1; j++) {
+					if(people[j].last > people[j+1].last) {
+						let temp = people[j];
+						people[j] = people[j+1];
+						people[j+1] = temp;
+					}
+			    }
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
@@ -124,7 +124,7 @@
 			}
 
 
-			}//end of loop going through people array to edit 'output'
+			//end of loop going through people array to edit 'output'
 
 				//log the output string
 				 console.log(output);
